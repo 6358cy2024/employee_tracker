@@ -1,6 +1,7 @@
 // Get a reference to the #add-employees-btn element
 //Christian Yanez
 // Collect employee data
+//For some reason the button preemptively presses itself when the page loads
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 const collectEmployees = function() {
@@ -52,19 +53,18 @@ const displayAverageSalary = function(employeesArray) {
   for (employee of employeesArray) {
     totalSalary += employee.salary;
   }
-
   const averageSalary = totalSalary / employeesArray.length;
-  console.log('The average salary is', averageSalary);
+  console.log('The average salary is', averageSalary); // Testing the average finding function
+  
 }
-
-console.log(displayAverageSalary(test));//testing the average finding function.
-
+console.log(displayAverageSalary(test));//for some reason this line is needed for the above 
+//console.log to display the averageSalary even though this is indefined
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
-  // TODO: Select and display a random employee
+  let randomIndexNumber = randomNumber(0, employeesArray.length - 1);
+  console.log(employeesArray[randomIndexNumber]);
 }
-
 /*
   ====================
   STARTER CODE
