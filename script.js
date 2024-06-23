@@ -2,6 +2,7 @@
 //Christian Yanez
 // Collect employee data
 //For some reason the button preemptively presses itself when the page loads
+//I did not change any of the code below the line.
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 const collectEmployees = function() {
