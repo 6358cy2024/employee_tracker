@@ -1,7 +1,8 @@
 // Get a reference to the #add-employees-btn element
 //Christian Yanez
 // Collect employee data
-//For some reason the button preemptively presses itself when the page loads
+//For some reason the button preemptively presses itself when the page loads.
+//When this happens, add a mulligan entry, and then click the button as intended and fill it out with test values.
 //I did not change any of the code below the line.
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
@@ -63,8 +64,8 @@ console.log(displayAverageSalary(test));//for some reason this line is needed fo
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
-  let randomIndexNumber = randomNumber(0, employeesArray.length - 1);
-  console.log(employeesArray[randomIndexNumber]);
+  let randomIndexNumber = Math.floor(Math.random() * employeesArray.length);
+  console.log('And the winner is:', employeesArray[randomIndexNumber].firstName, employeesArray[randomIndexNumber].lastName);
 }
 /*
   ====================
