@@ -59,8 +59,6 @@ const displayAverageSalary = function(employeesArray) {
   console.log('The average salary is', averageSalary); // Testing the average finding function
   
 }
-console.log(displayAverageSalary(test));//for some reason this line is needed for the above 
-//console.log to display the averageSalary even though this is indefined
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
