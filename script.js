@@ -1,6 +1,8 @@
 // Get a reference to the #add-employees-btn element
 //Christian Yanez
 // Collect employee data
+//Everything should be working properly, I'm not sure why the prompt shows up so early.
+//Use a mulligen value for the first set of prompts. Then it will work as intended
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 const collectEmployees = function() {
