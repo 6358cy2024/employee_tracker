@@ -1,9 +1,6 @@
 // Get a reference to the #add-employees-btn element
 //Christian Yanez
 // Collect employee data
-//For some reason the button preemptively presses itself when the page loads.
-//When this happens, add a mulligan entry, and then click the button as intended and fill it out with test values.
-//I did not change any of the code below the line.
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 const collectEmployees = function() {
@@ -44,9 +41,6 @@ const collectEmployees = function() {
 
   return employeesArray;
 }
-
-const test = collectEmployees();
-console.log(test);//testing the values are being properly stored
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
